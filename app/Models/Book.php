@@ -13,6 +13,6 @@ class Book extends Model
         'title',
         'description',
         'price',
-        'abailable'
+        'available'
     ];
 }
