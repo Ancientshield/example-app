@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->id();
+            $table->string(column: 'title');
+            $table->text(column: 'description');
+            $table->decimal(column: 'price');
+            $table->boolean(column: 'available')->default(vaule: false);
             $table->timestamps();
         });
     }
